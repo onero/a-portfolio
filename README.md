@@ -1,5 +1,9 @@
 # APortfolio
 
+![Portfolio image](http://https://github.com/onero/a-portfolio/tree/master/src/assets/images/readme-front.png)
+
+This project is the code behind my personal portfolio hosted right [here](https://cv.adamino.dk)!
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Development server

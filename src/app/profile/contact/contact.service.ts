@@ -1,4 +1,5 @@
-import { HttpClient } from '@angular/common/http';
+import { EmailModel } from './email.model';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
 
@@ -11,21 +12,14 @@ export class ContactService {
 
   constructor(private http: HttpClient) { }
 
-  public postMessage(input: any) {
-    return this.http.post(this.mailApi, input, { responseType: 'text' })
-      .pipe(
-        map(
-          (response) => {
-            if (response) {
-              return response;
-            } else {
-              return null;
-            }
-          },
-          (error: any) => {
-            return error;
-          }
-        )
-      )
+  public postMessage(email: EmailModel) {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    this.http.post('https://formspree.io/f/mvolkeby',
+      { name: email.fullname, replyto: email.email, message: email.comment },
+      { 'headers': headers }).subscribe(
+        response => {
+          console.log(response);
+        }
+      );
   }
 }

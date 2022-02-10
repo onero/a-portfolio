@@ -11,12 +11,12 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { SkillComponent } from './skills/skill/skill.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     FormsModule,
     ReactiveFormsModule,
     NgxSpinnerModule
@@ -31,6 +31,7 @@ import { SkillComponent } from './skills/skill/skill.component';
     ExperienceComponent,
     SkillsComponent,
     SkillComponent,
+    ContactComponent,
   ],
   providers: [
   ]

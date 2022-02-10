@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
 import { ProfileComponent } from './profile.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -18,7 +17,6 @@ import { SkillComponent } from './skills/skill/skill.component';
   imports: [
     CommonModule,
     FormsModule,
-    SnotifyModule,
     FormsModule,
     ReactiveFormsModule,
     NgxSpinnerModule
@@ -35,8 +33,6 @@ import { SkillComponent } from './skills/skill/skill.component';
     SkillComponent,
   ],
   providers: [
-    { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
-    SnotifyService,
   ]
 })
 export class ProfileModule { }

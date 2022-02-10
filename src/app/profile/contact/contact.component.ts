@@ -1,6 +1,6 @@
 import { EmailModel } from './email.model';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 
 import { ContactService } from './contact.service';
 
@@ -18,13 +18,13 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.formData = this.builder.group({
-      fullname: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      comment: new FormControl('', [Validators.required])
+      fullname: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      comment: ['', [Validators.required, Validators.minLength(25)]]
     });
   }
 
-  public onSubmit(formData: {fullname: string, email: string, comment: string}) {
+  public async onSubmit(formData: { fullname: string, email: string, comment: string }) {
 
     const email: EmailModel = {
       fullname: formData.fullname,
@@ -32,5 +32,7 @@ export class ContactComponent implements OnInit {
       comment: formData.comment
     }
     this.contactService.postMessage(email);
+
+    this.formData.reset();
   }
 }

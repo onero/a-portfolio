@@ -14,11 +14,12 @@ export class ContactService {
 
   public postMessage(email: EmailModel) {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    this.http.post('https://formspree.io/f/mvolkeby',
+    return this.http.post('https://formspree.io/f/mvolkeby',
       { name: email.fullname, replyto: email.email, message: email.comment },
       { 'headers': headers }).subscribe(
         response => {
           console.log(response);
+          return response;
         }
       );
   }

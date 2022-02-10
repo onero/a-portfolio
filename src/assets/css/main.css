@@ -4059,7 +4059,7 @@ img {
   .footer .copyright {
     text-align: right;
   }
-  
+
   .navbar-nav .nav-link i.fa,
   .navbar-nav .nav-link i.now-ui-icons {
     opacity: .5;
@@ -4509,7 +4509,7 @@ img {
   .navbar-nav .nav-item:not(:last-child) {
     margin-right: 5px;
   }
-  
+
   .dropdown-menu .dropdown-item {
     color: inherit;
   }
@@ -4562,7 +4562,7 @@ img {
   .footer .copyright {
     text-align: center;
   }
-  
+
   .page-header .container h6.category-absolute {
     width: 90%;
   }
@@ -4883,7 +4883,6 @@ img {
 .profile-image img {
   position: relative;
   border-radius: 50%;
-  height: 200px;
   width: 250px;
   padding: 0;
   margin: 0;
@@ -5127,14 +5126,14 @@ margin-left: 0px;
   position: absolute;
   top: 50px;
   left: 13px;
-  
+
   background-color: #666666;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-  
+
 }
 .timeline > li.timeline-inverted > .timeline-panel {
   float: left;

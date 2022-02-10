@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "adamino-portfolio": {
+      "hosting": {
+        "a-portfolio": [
+          "adamino-portfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "adamino-portfolio"
+  }
+}

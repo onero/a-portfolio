@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "a-portfolio:build:production",
+            "firebaseProject": "adamino-portfolio",
+            "firebaseHostingSite": "adamino-portfolio"
+          }
         }
       }
     }

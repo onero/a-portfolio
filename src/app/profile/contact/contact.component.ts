@@ -1,6 +1,6 @@
 import { EmailModel } from './email.model';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
+import { UntypedFormBuilder, FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 
 import { ContactService } from './contact.service';
 
@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
 
   formData: any;
 
-  constructor(private builder: FormBuilder,
+  constructor(private builder: UntypedFormBuilder,
     private contactService: ContactService) { }
 
   ngOnInit() {

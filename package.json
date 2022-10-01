@@ -16,7 +16,7 @@
     "@angular/core": "^14.2.2",
     "@angular/forms": "^14.2.2",
     "@angular/platform-browser": "^14.2.2",
-    "@angular/platform-browser-dynamic": "^14.2.2",
+    "@angular/platform-browser-dynamic": "^14.2.4",
     "@angular/router": "^14.2.2",
     "ngx-spinner": "^14.0.0",
     "bootstrap": "^5.2.1",

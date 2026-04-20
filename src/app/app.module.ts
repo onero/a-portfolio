@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

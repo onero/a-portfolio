@@ -1,0 +1,64 @@
+.privacy-policy-page {
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  padding: 60px 20px 80px;
+  color: #2c2c2c;
+  line-height: 1.75;
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .effective-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 40px;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 14px;
+
+    li {
+      margin-bottom: 6px;
+    }
+  }
+
+  .contact-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
+  a {
+    color: #2ca8ff;
+
+    &:hover {
+      color: #1a8fd8;
+    }
+  }
+
+  .back-link {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e9ecef;
+  }
+}

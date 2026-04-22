@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Font Awesome 6 compatibility with Now UI Kit (originally targets i.fa) */
+.btn.btn-icon.btn-sm i.fab,
+.btn.btn-icon.btn-sm i.fas,
+.navbar .navbar-nav > a.btn.btn-icon.btn-sm i.fab,
+.navbar .navbar-nav > a.btn.btn-icon.btn-sm i.fas {
+  font-size: 0.6875rem;
+}
+
+.btn.btn-icon.btn-lg i.fab,
+.btn.btn-icon.btn-lg i.fas,
+.navbar .navbar-nav > a.btn.btn-icon.btn-lg i.fab,
+.navbar .navbar-nav > a.btn.btn-icon.btn-lg i.fas {
+  font-size: 1.325rem;
+}
+
+.btn.btn-icon:not(.btn-footer) i.fab,
+.btn.btn-icon:not(.btn-footer) i.fas,
+.navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.fab,
+.navbar .navbar-nav > a.btn.btn-icon:not(.btn-footer) i.fas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-12px, -12px);
+  line-height: 1.5626rem;
+  width: 25px;
+}
+
+/* Portrait pulsating circle — complementary orange */
+.profile-image a:before {
+  border-color: rgba(225, 130, 0, 0.6);
+}

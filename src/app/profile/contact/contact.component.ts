@@ -5,6 +5,7 @@ import { UntypedFormBuilder, FormControl, FormGroup, Validators, NgForm } from '
 import { ContactService } from './contact.service';
 
 @Component({
+  standalone: false,
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']

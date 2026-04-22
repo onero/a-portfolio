@@ -26,3 +26,8 @@
   line-height: 1.5626rem;
   width: 25px;
 }
+
+/* Match portrait pulsating circle to button primary color */
+.profile-image a:before {
+  border-color: rgba(21, 70, 95, 0.6);
+}
